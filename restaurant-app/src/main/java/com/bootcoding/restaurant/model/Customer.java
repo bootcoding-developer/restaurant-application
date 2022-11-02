@@ -10,5 +10,5 @@ public class Customer {
     private String address;
     private String email;
     private String userId;
-
+    private long mobile;
 }
