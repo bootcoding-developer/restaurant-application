@@ -4,4 +4,5 @@ import com.bootcoding.restaurant.model.User;
 
 public class LoginService {
 
+
 }
