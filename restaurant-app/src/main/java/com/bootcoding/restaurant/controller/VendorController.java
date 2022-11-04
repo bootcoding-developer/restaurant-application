@@ -18,5 +18,6 @@ public class VendorController
         log.info("/vendor url is invoked by client");
         log.info(vendor.toString());
 
+
     }
 }
