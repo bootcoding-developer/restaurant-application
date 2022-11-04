@@ -1,4 +1,6 @@
 package com.bootcoding.restaurant.service;
 
-public class VendorService {
+public class VendorService
+{
+
 }

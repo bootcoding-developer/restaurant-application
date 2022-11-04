@@ -3,19 +3,21 @@ package com.bootcoding.restaurant.controller;
 import com.bootcoding.restaurant.model.Vendor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Slf4j
 public class VendorController
 {
+
     @GetMapping("/vendor/register")
-    public void registerVendor()
+    public void registerVendor(@RequestBody Vendor vendor)
     {
         log.info("/vendor url is invoked by client");
-        System.out.println();
-        Vendor v = new Vendor();
-        v.setId(1);
+        log.info("\n User Id -" +vendor.getUserId()+"\nName -"+vendor.getVendorName()+"\nmobile -"+vendor.getPhone()
+        +"\nAddress - "+vendor.getAddress()+" "+vendor.getCity()+" "+vendor.getState()+"\n Email - "+vendor.getEmail());
 
     }
 }
