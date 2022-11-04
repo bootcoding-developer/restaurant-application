@@ -13,6 +13,7 @@ public class UserController {
     public void registerUser(@RequestBody User user){
          log.info("/user url invoked by client");
          log.info(user.getUserId());
-         log.info("/n user Id -" +user.getUserId()+"\n fristname -"+user.getFirstName()+"\n User Name -"+user.getUsername());
+         log.info(user.toString());
+//         log.info("/n user Id -" +user.getUserId()+"\n first name -"+user.getFirstName()+"\n User Name -"+user.getUsername());
      }
 }
