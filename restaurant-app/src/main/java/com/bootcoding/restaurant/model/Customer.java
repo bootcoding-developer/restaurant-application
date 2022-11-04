@@ -9,6 +9,9 @@ public class Customer {
     private String lastName;
     private String address;
     private String email;
-    private String userId;
+    private int userId;
     private long mobile;
+    private String password;
+    private String state;
+    private String city;
 }
