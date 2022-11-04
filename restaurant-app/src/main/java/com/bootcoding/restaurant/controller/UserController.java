@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
      @GetMapping("/user/register")
     public void register(){
-         System.out.println("Enter your username:");
+         log.info("/user url invoked by client");
+         log.info("Enter your username");
      }
 
 }
