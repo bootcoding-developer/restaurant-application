@@ -17,7 +17,7 @@ public class CustomerController {
         c.setUserId(1);c.setFirstName("Customer");c.setLastName("1");c.setCity("Nagpur");c.setState("Maharashtra");
         c.setMobile(987654321);c.setEmail("c1@gmail.com");c.setPassword("c1@Pass");
         log.info("/customer url is invoked by client");
-        System.out.println("Hello!");
+
     }
     @GetMapping("/customer/details")
     public void getCustomerDetails(){
