@@ -16,8 +16,7 @@ public class VendorController
     public void registerVendor(@RequestBody Vendor vendor)
     {
         log.info("/vendor url is invoked by client");
-        log.info("\n User Id -" +vendor.getUserId()+"\nName -"+vendor.getVendorName()+"\nmobile -"+vendor.getPhone()
-        +"\nAddress - "+vendor.getAddress()+" "+vendor.getCity()+" "+vendor.getState()+"\n Email - "+vendor.getEmail());
+        log.info(vendor.toString());
 
     }
 }
