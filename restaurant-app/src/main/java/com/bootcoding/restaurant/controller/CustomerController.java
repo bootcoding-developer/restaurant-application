@@ -15,8 +15,7 @@ public class CustomerController {
     @GetMapping("/customer/register")
     public  void registerCustomer(@RequestBody Customer customer){
         log.info("/customer url is invoked by client");
-        log.info("\n User Id - "+customer.getUserId()+"\n Name - "+customer.getFirstName()+" "+customer.getLastName()+
-                "\t Mobile - "+customer.getMobile()+"\t Email - "+customer.getEmail()+"\tAddress - "+customer.getAddress()+","
-        +customer.getCity()+","+customer.getState()+"");
+        log.info(customer.toString());
+
     }
  }
