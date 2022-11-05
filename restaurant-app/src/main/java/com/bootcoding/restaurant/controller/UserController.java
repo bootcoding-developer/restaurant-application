@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Slf4j
 public class UserController {
-     @GetMapping("/user/register")
+    @GetMapping("/user/register")
     public void registerUser(@RequestBody User user){
          log.info("/user url invoked by client");
          log.info(user.getUserId());
