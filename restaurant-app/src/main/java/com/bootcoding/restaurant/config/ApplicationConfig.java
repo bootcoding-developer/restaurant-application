@@ -12,17 +12,16 @@ import javax.sql.DataSource;
 @Configuration
 @Getter
 public class ApplicationConfig {
+
     @Value("${application.mode}")
     private String appMode;
 
     @Value("${restaurant.datasource.username}")
     private String dbUsername;
 
-
     @Bean
     @ConfigurationProperties(prefix = "restaurant.datasource")
     public DataSource restaurantDataSource() {
         return DataSourceBuilder.create().build();
     }
-
 }

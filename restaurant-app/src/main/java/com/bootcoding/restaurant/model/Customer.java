@@ -14,4 +14,5 @@ public class Customer {
     private String password;
     private String state;
     private String city;
+
 }
