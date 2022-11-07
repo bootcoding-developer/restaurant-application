@@ -40,7 +40,7 @@ public class CustomerService {
             Connection con = restaurantDataSource.getConnection();
 
             Statement stmt = con.createStatement();
-            String query = "CREATE TABLE customertable (String firstName,String lastName,String address,String email," +
+            String query = "CREATE TABLE app_customer (String firstName,String lastName,String address,String email," +
                     "String password,String city,String state,int userId,long mobile)";
             System.out.println("Create Table Query : " + query);
             stmt.executeUpdate(query);
