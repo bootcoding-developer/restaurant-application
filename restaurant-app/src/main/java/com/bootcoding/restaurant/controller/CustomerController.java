@@ -22,7 +22,7 @@ public class CustomerController {
     public  void registerCustomer(@RequestBody Customer customer){
         log.info("/customer url is invoked by client");
         log.info(customer.toString());
-        customerService.createTable();
-        customerService.insertCustomer();
+        //customerService.createTable();
+        customerService.insertCustomer(customer);
     }
  }
