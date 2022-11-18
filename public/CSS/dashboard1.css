@@ -46,6 +46,7 @@ p {
 }
 
 .logo_large{
+  white-space: nowrap;
   font-family: 'Kaushan Script', cursive;
 }
 
@@ -254,6 +255,7 @@ p {
   font-size: var(--font-normal);
   color: var(--color-darker);
   transform: translateY(40%);
+  cursor: pointer;
 } 
 
 /* Referal */
