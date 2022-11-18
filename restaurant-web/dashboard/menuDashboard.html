@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/public/CSS/dashboard1.css">
+        <link rel="stylesheet" href="/public/CSS/menuDashboard.css">
+        <title>dashboard</title>
+    </head>
+<body>
+    <div class="header">
+        <div class="logo_large"><h1><b><strong>Fire Restaurant</strong></b></h1></div>
+        <div class="search">
+            <div class="left"><i class="fa-solid fa-location-dot" id="location_icon"></i> Nagpur</div>
+            <div class="right"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="search_icon" placeholder="Search for restaurants, cuisine or a dish"></div>
+        </div>
+        <div class="btns d-flex justify-content-around">
+            <a href="#">Login</a>
+            <a href="#">Signup</a>
+        </div>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active">Home</li>
+              <li class="breadcrumb-item active">Library</li>
+              <li class="breadcrumb-item active">Data</li>
+            </ol>
+        </nav>
+        <div class="options">
+            <section><i class="fa-solid fa-truck"></i> Delivery</section>
+            <section><i class="fa-solid fa-utensils"></i> Dinning Out</section>
+            <section><i class="fa-solid fa-champagne-glasses"></i> Nightlife</section>
+        </div>
+        <div class="filters my-3">
+            <span><i class="fa-solid fa-repeat"></i> Filters</span>
+            <span><i class="fa-solid fa-arrows-up-down"></i> Delivery Time</span>
+            <span>Rating: 4.0+</span>
+            <span>Pure Veg</span>
+            <span>Cuisines <i class="fa-solid fa-angle-down"></i> </span>
+            <span>More Filters <i class="fa-solid fa-angle-down"></i> </span>
+        </div>
+        <div class="orders">
+            <h1>Inspiration for your first order</h1>
+            <div class="btns d-flex justify-content-between">
+                <button class="btn-prev">Prev</button>
+                <button class="btn-next">Next</button>
+            </div>
+            <div class="dishes">
+                <section>
+                    <picture><img src="/public/Assets/Imgs/backgroundImg4.png"></picture>
+                    <h2 class="text-center"><strong>Thali</strong></h2>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="/public/JS/logic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
